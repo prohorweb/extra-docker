@@ -1,6 +1,9 @@
 services:
+
   php:
-    image: php:7.4-fpm
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./yii2-app:/var/www/html
     working_dir: /var/www/html
@@ -20,7 +23,6 @@ services:
       - php
     networks:
       - yii
-
   db:
     image: mariadb:10.5
     restart: always
@@ -30,7 +32,10 @@ services:
       MYSQL_USER: yii2user
       MYSQL_PASSWORD: yii2password
     volumes:
-      - db_data:/var/lib/mysql
+      - ./db_data:/var/lib/mysql
+      - ./db_backup:/var/lib/db
+      # docker exec -i yii-docker-db-1 mariadb -u root -proot_password -e "CREATE DATABASE IF NOT EXISTS extra"
+      # docker exec -i yii-docker-db-1 mariadb -u root -proot_password extra < ./db_backup/extra.sql
     networks:
       - yii
 

@@ -1,13 +1,15 @@
 <?php
 
-/** @var yii\web\View $this */
-/** @var string $name */
-/** @var string $message */
-/** @var Exception $exception*/
+/* @var $this yii\web\View */
+/* @var $name string */
+/* @var $message string */
+/* @var $exception Exception */
 
 use yii\helpers\Html;
 
 $this->title = $name;
+
+$this->context->layout = Yii::$app->user->isGuest ? 'main_old' : 'main';
 ?>
 <div class="site-error">
 

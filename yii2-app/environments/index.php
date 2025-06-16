@@ -10,7 +10,7 @@
  *     'environment name' => [
  *         'path' => 'directory storing the local files',
  *         'skipFiles'  => [
- *             // list of files that should only be copied once and skipped if they already exist
+ *             // list of files that should only copied once and skipped if they already exist
  *         ],
  *         'setWritable' => [
  *             // list of directories that should be set writable
@@ -34,9 +34,10 @@ return [
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
-            'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
+            'api/runtime',
+            'api/web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -44,8 +45,8 @@ return [
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
-            'common/config/codeception-local.php',
             'frontend/config/main-local.php',
+            'api/config/main-local.php',
         ],
     ],
     'Production' => [
@@ -53,9 +54,10 @@ return [
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
-            'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
+            'api/runtime',
+            'api/web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -63,6 +65,7 @@ return [
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
+            'api/config/main-local.php',
         ],
     ],
 ];
