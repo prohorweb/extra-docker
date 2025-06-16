@@ -9,7 +9,7 @@ $params = array_merge(
     require __DIR__ . '/params-local.php'
 );
 
-$url = 'http://' . $_SERVER["SERVER_NAME"];
+$url = 'https://' . $_SERVER["SERVER_NAME"];
 $sitemap = '';
 $club = explode('.', $_SERVER["SERVER_NAME"])[0];
 if ($club == 'extra') {

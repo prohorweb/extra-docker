@@ -1,0 +1,28 @@
+{
+  "name": "loveorigami/yii2-jquery-loading",
+  "description": "A wrapper around Yii2 jquery loading for using with AJAX requests",
+  "keywords": [
+    "yii2",
+    "ajax",
+    "loading",
+    "jquery-loading"
+  ],
+  "version": "1.0",
+  "homepage": "https://github.com/loveorigami/yii2-jquery-loading",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lukyanov Andrey",
+      "homepage": "http://loveorigami.info"
+    }
+  ],
+  "require": {
+    "bower-asset/jquery-loading": "~1.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "lo\\widgets\\loading\\": "src/"
+    }
+  }
+}
