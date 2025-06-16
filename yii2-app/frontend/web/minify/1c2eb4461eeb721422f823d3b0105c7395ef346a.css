@@ -1,0 +1,2 @@
+@charset "UTF-8";
+body:before{white-space:pre;font-family:monospace;content:"Error: Invalid CSS after \"			mar\": expected \"{\", was \"\"\A         on line 2321 of d:/WORK/ExtraSport/frontend/web/sass/template.scss\A \A 2316: 	}\A 2317: 	&__labels {\A 2318: 		@include flex();\A 2319: 		margin: 0 0 5.5rem -10px;\A 2320: 		span {\A 2321: 			mar"}

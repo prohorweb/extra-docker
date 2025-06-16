@@ -1,0 +1,2 @@
+@charset "UTF-8";
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined variable: \"$xlg\".\A         on line 109 of D:/WORK/ExtraSport/frontend/web/sass/_welcom-section.scss, in `media'\A         from line 109 of D:/WORK/ExtraSport/frontend/web/sass/_welcom-section.scss\A         from line 3778 of D:/WORK/ExtraSport/frontend/web/sass/template.scss\A \A 104: 			border: 0;\A 105: 		}\A 106: 	}\A 107: \A 108: 	tbody tr:nth-of-type(2n) td {\A 109: 		background: $grey;\A 110: 		border-color: #fff;\A 111: 	}\A 112: }\A 113: \A 114: hr {"}
